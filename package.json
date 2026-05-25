@@ -1,0 +1,8 @@
+{
+  "name": "selfhosted-runner-lab",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node tests/app.test.js",
+    "build": "mkdir -p dist && cp src/index.js dist/"
+  }
+}
