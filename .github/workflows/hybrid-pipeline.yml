@@ -28,7 +28,7 @@ jobs:
     runs-on:
       - self-hosted
       - windows
-      - custom-runner
+      - wrong-label
 
     steps:
 
