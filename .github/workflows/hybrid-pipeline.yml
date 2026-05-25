@@ -35,8 +35,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Invalid path test
-        run: cd carpeta-inexistente
+      - name: Permission error test
+        run: |
+          echo "test" > C:\Windows\System32\test.txt
 
       - name: Show runner info
         run: |
