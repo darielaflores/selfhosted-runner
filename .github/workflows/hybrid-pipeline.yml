@@ -35,6 +35,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Invalid path test
+        run: cd carpeta-inexistente
+
       - name: Show runner info
         run: |
           echo "Running on Self Hosted Runner"
@@ -45,8 +48,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        #run: npm install
-        run: npm install paquete-falso-123
+        run: npm install
 
       - name: Run tests
         run: npm test
