@@ -35,6 +35,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Show network info
+        run: ipconfig
+
       - name: Show runner info
         run: |
           echo "Running on Self Hosted Runner"
