@@ -1,4 +1,4 @@
-name: Hybrid Pipeline
+name: Self-hosted Runner Examen
 
 on:
   push:
@@ -6,21 +6,6 @@ on:
       - main
 
 jobs:
-
-  # Runner de GitHub
-  hosted-job:
-
-    runs-on: ubuntu-latest
-
-    steps:
-
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Hosted runner info
-        run: |
-          echo "Running on GitHub Hosted Runner"
-          uname -a
 
   # Self runner
   self-hosted-job:
